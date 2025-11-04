@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.browser-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    gap: 5px;
+}
+
+.nav-button {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.nav-button:hover {
+    background-color: #e8e8e8;
+}
+
+.nav-button:active {
+    background-color: #d8d8d8;
+}
+
+.url-container {
+    display: flex;
+    flex: 1;
+    margin: 0 10px;
+}
+
+#url-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#go-button {
+    padding: 8px 16px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+#go-button:hover {
+    background-color: #005a9e;
+}
+
+#youtube-button {
+    padding: 8px 16px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#youtube-button:hover {
+    background-color: #cc0000;
+}
+
+.browser-content {
+    flex: 1;
+    border: none;
+    background-color: white;
+}
+
+/* Стили для домашней страницы */
+.home-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.home-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.feature {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.link-button {
+    padding: 12px 24px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.link-button:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}
+
+.link-button.youtube {
+    background-color: #ff0000;
+}
+
+.link-button.google {
+    background-color: #4285f4;
+}
+
+.link-button.github {
+    background-color: #333;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* ... предыдущие стили остаются без изменений ... */
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.link-button {
+    padding: 12px 24px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+}
+
+.link-button:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
+
+.link-button.youtube {
+    background-color: #ff0000;
+}
+
+.link-button.google {
+    background-color: #4285f4;
+}
+
+.link-button.github {
+    background-color: #333;
+}
